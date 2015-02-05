@@ -137,7 +137,11 @@ public class CliqueDetector implements org.gephi.statistics.spi.Statistics, Long
         while (tmp != null) {
 
             if (cancel) {
-                break;
+                //Empty variables
+                Bk.list.clear();
+                tmp.clear();
+                Cliques.clear();
+                return;
             }
 
             //Search for Bk+1
